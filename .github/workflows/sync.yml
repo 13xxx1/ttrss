@@ -1,0 +1,51 @@
+name: Sync RSS from tiktok-rss-flat
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"   # каждые 5 минут
+  workflow_dispatch:         # кнопка Run workflow появится
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Prepare rss folder
+        run: mkdir -p rss
+
+      - name: Download XMLs from tiktok-rss-flat
+        run: |
+          BASE_FLAT="https://13xxx1.github.io/tiktok-rss-flat/rss"
+          HANDLES=$(cat <<'EOF'
+vikiogorodnika
+domart8
+alekseysad6
+mastersada
+user255101702193
+president_garden
+country.hacks
+rybalkaaktobe04
+anatol1929
+EOF
+)
+          for h in $HANDLES; do
+            echo "Fetching $h.xml..."
+            curl -fsSL "$BASE_FLAT/${h}.xml" -o "rss/${h}.xml" || echo "WARN: $h.xml not fetched"
+          done
+
+      - name: Commit if changed
+        run: |
+          if [[ -n "$(git status --porcelain rss)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add rss/*.xml
+            git commit -m "Auto update RSS feeds"
+            git push
+          else
+            echo "No changes"
+          fi
