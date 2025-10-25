@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title>anatol1929 TikTok</title>
+    <link>https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/rss/anatol1929.xml</link>
+    <description>OK Boomer, all the latest TikToks from anatol1929</description>
+    <atom:link href="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/rss/anatol1929.xml" rel="self"/>
+    <docs>http://www.rssboard.org/rss-specification</docs>
+    <generator>python-feedgen</generator>
+    <image>
+      <url>https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/tiktok-rss.png</url>
+      <title>anatol1929 TikTok</title>
+      <link>https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/rss/anatol1929.xml</link>
+    </image>
+    <language>en</language>
+    <lastBuildDate>Thu, 09 Oct 2025 16:55:57 +0000</lastBuildDate>
+    <item>
+      <title>Tralalelo tralala</title>
+      <link>https://tiktok.com/@anatol1929/video/7494577248759024918</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/anatol1929/screenshot_owfQCIoAFBBEe5gR9BDokoQlAIyYnFRkhFEE4p~tplv-tiktokx-origin.image.jpg" / &gt; Tralalelo tralala</description>
+      <guid isPermaLink="false">https://tiktok.com/@anatol1929/video/7494577248759024918</guid>
+      <pubDate>Fri, 18 Apr 2025 09:07:31 +0000</pubDate>
+    </item>
+    <item>
+      <title>No Title</title>
+      <link>https://tiktok.com/@anatol1929/video/7559266794561621270</link>
+      <description>&lt;img src="https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/thumbnails/anatol1929/screenshot_oAtW20IIELARlDzeb6LInJLfLPGfhIACGD9jAm~tplv-tiktokx-origin.image.jpg" / &gt; No Description</description>
+      <guid isPermaLink="false">https://tiktok.com/@anatol1929/video/7559266794561621270</guid>
+      <pubDate>Thu, 09 Oct 2025 16:55:57 +0000</pubDate>
+    </item>
+  </channel>
+</rss>
