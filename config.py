@@ -1,5 +1,5 @@
 # Set your GH Pages URL here e.g.:
-ghPagesURL = "https://conoro.github.io/tiktok-rss-flat/"
-ghRawURL = "https://raw.githubusercontent.com/conoro/tiktok-rss-flat/main/"
+ghPagesURL = "https://13xxx1.github.io/ttrss/"
+ghRawURL = "https://raw.githubusercontent.com/13xxx1/ttrss/main/"
 
 # ghPagesURL = "https://tiktokrss.conoroneill.com/"
